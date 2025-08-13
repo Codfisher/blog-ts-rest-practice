@@ -1,0 +1,22 @@
+{
+  "name": "@project-code/root",
+  "version": "0.0.0",
+  "description": "root 主要用來記錄 scripts",
+  "scripts": {
+    "dev:admin-web": "cd apps/admin-web && rushx dev",
+    "dev:api-server": "cd apps/api-server && rushx dev",
+    "version:admin-web:minor": "cd apps/admin-web && npm version minor",
+    "version:admin-web:patch": "cd apps/admin-web && npm version patch",
+    "version:api-server:minor": "cd apps/api-server && npm version minor",
+    "version:api-server:patch": "cd apps/api-server && npm version patch",
+    "rush:watch": "rush build:watch --to-except api-server",
+    "rush:update": "rush update",
+    "rush:update-purge": "rush update --purge",
+    "rush:update-recheck": "rush update --recheck",
+    "rush:build": "rush build -v",
+    "rush:deploy": "rush deploy --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,138 @@
+{
+  // Place your cms-core-mongo 工作區 snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  //   "scope": "javascript,typescript",
+  //   "prefix": "log",
+  //   "body": [
+  //     "console.log('$1');",
+  //     "$2"
+  //   ],
+  //   "description": "Log output to console"
+  // }
+  "schema-number": {
+    "scope": "javascript,typescript",
+    "prefix": "@Prop number",
+    "body": [
+      "@Prop()\n$1: number = 0;"
+    ],
+    "description": "Mongoose Schema number Prop"
+  },
+  "schema-boolean": {
+    "scope": "javascript,typescript",
+    "prefix": "@Prop boolean",
+    "body": [
+      "@Prop()\n$1: boolean = false;"
+    ],
+    "description": "Mongoose Schema boolean Prop"
+  },
+  "schema-string": {
+    "scope": "javascript,typescript",
+    "prefix": "@Prop string",
+    "body": [
+      "@Prop()\n$1: string = '';"
+    ],
+    "description": "Mongoose Schema string Prop"
+  },
+  "schema-ref": {
+    "scope": "javascript,typescript",
+    "prefix": "@Prop ref",
+    "body": [
+      "@Prop({\n type: Mongoose.Schema.Types.ObjectId,\n ref: StorageFile.name,\n autopopulate: true,\n set: parseObjectId,\n})\n$1?: string;"
+    ],
+    "description": "Mongoose Schema ref Prop",
+  },
+  "schema-enum": {
+    "scope": "javascript,typescript",
+    "prefix": "@Prop enum",
+    "body": [
+      "@Prop({ type: String, enum:$1})\n$2:$1 = $1;"
+    ],
+    "description": "Mongoose Schema enum Prop",
+  },
+  "schema-BasicImage": {
+    "scope": "javascript,typescript",
+    "prefix": "@Prop BasicImage",
+    "body": [
+      "@Prop({ type: BasicImageSchema })\n$1 = new BasicImage();"
+    ],
+    "description": "Mongoose Schema enum Prop",
+  },
+  "schema-timestamp": {
+    "scope": "javascript,typescript",
+    "prefix": "@Prop timestamp",
+    "body": [
+      "@Prop({\n type: TimestampSchema,\n required: true,\n})\ntimestamp!: Timestamp;"
+    ],
+    "description": "Mongoose Schema timestamp Prop",
+  },
+  "dto-string": {
+    "scope": "javascript,typescript",
+    "prefix": "dto string",
+    "body": [
+      "@IsString()\n@IsNotEmpty()\n@IsOptional()\n$1: string;"
+    ],
+    "description": "Nest DTO string",
+  },
+  "dto-enum": {
+    "scope": "javascript,typescript",
+    "prefix": "dto enum",
+    "body": [
+      "@IsEnum($1)\n@IsNotEmpty()\n@IsOptional()\n$2: $1;"
+    ],
+    "description": "Nest DTO enum",
+  },
+  "dto-boolean": {
+    "scope": "javascript,typescript",
+    "prefix": "dto boolean",
+    "body": [
+      "@IsBoolean()\n@Transform(({ value }) => [true, 'true', 1, '1'].includes(value))\n@IsOptional()\n$1?: boolean;"
+    ],
+    "description": "Nest DTO boolean",
+  },
+  "dto-number": {
+    "scope": "javascript,typescript",
+    "prefix": "dto number",
+    "body": [
+      "@Min(0)\n@IsInt()\n@Type(() => Number)\n@IsOptional()\n$1: number;"
+    ],
+    "description": "Nest DTO number",
+  },
+  "dto-object": {
+    "scope": "javascript,typescript",
+    "prefix": "dto object",
+    "body": [
+      "@ValidateNested()\n@Type(() => $1)\n@IsOptional()\n$2?: $1;"
+    ],
+    "description": "Nest DTO object",
+  },
+  "dto-mongoid": {
+    "scope": "javascript,typescript",
+    "prefix": "dto mongoid",
+    "body": [
+      "@IsMongoId()\n @IsOptional()\n $1?: string;"
+    ],
+    "description": "Nest DTO mongoid",
+  },
+  "class-update-dto": {
+    "scope": "javascript,typescript",
+    "prefix": "class-update-dto",
+    "body": [
+      "export class Update$1Dto extends PartialType(\n OmitType(Create$1Dto, ['items'] as const),\n) {\n //\n}"
+    ],
+    "description": "Nest DTO UpdateDto",
+  },
+  "create-mongoose-schema-class": {
+    "scope": "javascript,typescript",
+    "prefix": "@Schema",
+    "body": [
+      "@Schema({ _id: false })\nexport class $1 {\n  @Prop({ required: true })\n  name: string = '';\n\n  @Prop({\n    type: TimestampSchema,\n    required: true,\n  })\n  timestamp!: Timestamp;\n}\nexport const $1Schema = SchemaFactory.createForClass($1);\nexport type $1Document = HydratedDocument<$1>;"
+    ],
+    "description": "Mongoose Class Schema ",
+  },
+}

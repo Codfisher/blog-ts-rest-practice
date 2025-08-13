@@ -1,0 +1,18 @@
+{
+  "files.eol": "\n",
+  "cSpell.words": [
+    "antfu",
+    "autopopulate",
+    "bgmotion",
+    "everlink",
+    "gcloud",
+    "gcloudignore",
+    "nestjs",
+    "remeda",
+    "Singleblueprint",
+    "Singledata",
+    "unplugin",
+    "virtuals"
+  ],
+  "typescript.tsdk": "node_modules\\typescript\\lib"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/deploy-scenario.schema.json",
+  "deploymentProjectNames": [
+    "api-server"
+  ],
+  "includeNpmIgnoreFiles": true,
+  "projectSettings": [
+    {
+      "projectName": "api-server",
+      "additionalProjectsToInclude": [
+        "admin-web"
+      ]
+    }
+  ]
+}

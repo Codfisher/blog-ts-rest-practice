@@ -1,0 +1,6 @@
+{
+  "pickFromScripts": [
+    "gcp-build",
+    "start"
+  ]
+}

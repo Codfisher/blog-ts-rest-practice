@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.149.1",
+  "pnpmVersion": "9.15.6",
+  "nodeSupportedVersionRange": ">=18.0.0 <19.0.0 || >=20.0.0 <23.0.0",
+  "gitPolicy": {},
+  "repository": {},
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": [],
+    "preRushx": [],
+    "postRushx": []
+  },
+  "projects": [
+    {
+      "packageName": "admin-web",
+      "projectFolder": "apps/admin-web",
+      "tags": [
+        "apps"
+      ]
+    },
+    {
+      "packageName": "api-server",
+      "projectFolder": "apps/api-server",
+      "tags": [
+        "apps"
+      ]
+    },
+    {
+      "packageName": "@project-code/shared",
+      "projectFolder": "packages/shared",
+      "tags": [
+        "packages"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/common-versions.schema.json",
+  "preferredVersions": {
+    "@antfu/eslint-config": "3.7.3",
+    "@ts-rest/core": "3.52.1",
+    "zod": "3.25.76",
+    "@types/node": "22.13.10",
+    "typescript": "5.7.3"
+  }
+}

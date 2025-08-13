@@ -1,0 +1,45 @@
+{
+	"folders": [
+		{
+			"path": ".",
+			"name": "@project-code/root"
+		},
+		{
+			"path": "apps/admin-web"
+		},
+		{
+			"path": "apps/api-server"
+		},
+		{
+			"path": "packages/shared"
+		}
+	],
+	"settings": {
+		"editor.tabSize": 2,
+		"editor.formatOnSave": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll": "explicit"
+		},
+		"html.format.wrapAttributes": "force-expand-multiline",
+		"tailwindCSS.experimental.classRegex": [
+			"class=\"([^\"]+)\""
+		],
+		"tailwindCSS.emmetCompletions": true,
+		"cSpell.words": [
+			"antfu",
+			"tanstack"
+		],
+	},
+	"extensions": {
+		"recommendations": [
+			"Vue.volar",
+			"DavidAnson.vscode-markdownlint",
+			"WallabyJs.wallaby-vscode",
+			"teamchilla.blueprint",
+			"streetsidesoftware.code-spell-checker",
+			"dbaeumer.vscode-eslint",
+			"bradlc.vscode-tailwindcss",
+			"antfu.unocss",
+		]
+	}
+}

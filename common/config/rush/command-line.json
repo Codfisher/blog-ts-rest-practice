@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
+  "commands": [
+    {
+      "name": "build:watch",
+      "commandKind": "bulk",
+      "summary": "Build projects and watch for changes",
+      "description": "For details, see the article \"Using watch mode\" on the Rush website: https://rushjs.io/",
+      "incremental": true,
+      "enableParallelism": true,
+      "allowWarningsInSuccessfulBuild": true,
+      "watchForChanges": true
+    },
+    {
+      "commandKind": "bulk",
+      "name": "build:stage",
+      "summary": "Build with stage configuration",
+      "description": "Runs the build script in all projects",
+      "safeForSimultaneousRushProcesses": true,
+      "enableParallelism": true,
+      "ignoreDependencyOrder": false,
+      "ignoreMissingScript": false,
+      "allowWarningsInSuccessfulBuild": true,
+      "shellCommand": "npm run build:stage"
+    },
+    {
+      "commandKind": "bulk",
+      "name": "build",
+      "summary": "Build with prod configuration",
+      "description": "Runs the build script in all projects",
+      "enableParallelism": true,
+      "ignoreDependencyOrder": false,
+      "ignoreMissingScript": false,
+      "allowWarningsInSuccessfulBuild": true,
+      "shellCommand": "npm run build"
+    },
+    {
+      "commandKind": "bulk",
+      "name": "test",
+      "summary": "Run tests",
+      "description": "Runs the test script in all projects",
+      "enableParallelism": true,
+      "ignoreDependencyOrder": false,
+      "ignoreMissingScript": true,
+      "allowWarningsInSuccessfulBuild": true,
+      "shellCommand": "npm run test"
+    }
+  ],
+  "parameters": []
+}

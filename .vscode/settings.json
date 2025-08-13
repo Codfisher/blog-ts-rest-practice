@@ -1,0 +1,17 @@
+{
+  "cSpell.words": [
+    "autogrow",
+    "autopopulate",
+    "datetime",
+    "everlink",
+    "imagetools",
+    "intlify",
+    "pinia",
+    "pnpmfile",
+    "remeda",
+    "rushx",
+    "tsup",
+    "unocss"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

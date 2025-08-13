@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "baseUrl": ".",
+  "compilerOptions": {
+    "declaration": false,
+  },
+  "exclude": [
+    "node_modules",
+    "test",
+    "dist",
+    "scripts",
+    "**/*spec.ts",
+    "blueprint-templates"
+  ]
+}
