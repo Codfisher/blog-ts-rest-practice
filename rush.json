@@ -29,7 +29,7 @@
       ]
     },
     {
-      "packageName": "@project-code/shared",
+      "packageName": "@ts-rest-practice/shared",
       "projectFolder": "packages/shared",
       "tags": [
         "packages"

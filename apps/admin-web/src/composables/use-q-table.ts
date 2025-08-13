@@ -1,4 +1,4 @@
-import type { PaginatedData } from '@project-code/shared'
+import type { PaginatedData } from '@ts-rest-practice/shared'
 import type { UseAsyncStateOptions } from '@vueuse/core'
 import type { QTable } from 'quasar'
 import type { Ref } from 'vue'

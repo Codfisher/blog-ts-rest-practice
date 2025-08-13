@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common'
-import { User } from '@project-code/shared'
+import { User } from '@ts-rest-practice/shared'
 import to from 'await-to-js'
 import { omit } from 'remeda'
 import { AccountService } from '../account/account.service'

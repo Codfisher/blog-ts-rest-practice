@@ -1,6 +1,6 @@
 import type { ClientInferRequest, ClientInferResponseBody } from '@ts-rest/core'
 import type { IncomingHttpHeaders } from 'node:http'
-import { authContract } from '@project-code/shared'
+import { authContract } from '@ts-rest-practice/shared'
 import request from 'supertest'
 import { useContract } from '../common/utils/utils-ts-rest'
 

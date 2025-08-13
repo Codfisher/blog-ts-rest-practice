@@ -2,7 +2,7 @@
 	"folders": [
 		{
 			"path": ".",
-			"name": "@project-code/root"
+			"name": "@ts-rest-practice/root"
 		},
 		{
 			"path": "apps/admin-web"

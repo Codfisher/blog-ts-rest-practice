@@ -2,7 +2,7 @@ import type { ClientInferRequest, ClientInferResponseBody } from '@ts-rest/core'
 import type { IncomingHttpHeaders } from 'node:http'
 import {
   userContract,
-} from '@project-code/shared'
+} from '@ts-rest-practice/shared'
 import request from 'supertest'
 import { useContract } from '../common/utils/utils-ts-rest'
 

@@ -1,7 +1,7 @@
 import {
   Controller,
 } from '@nestjs/common'
-import { accountContract } from '@project-code/shared'
+import { accountContract } from '@ts-rest-practice/shared'
 import { TsRestHandler, tsRestHandler } from '@ts-rest/nest'
 import to from 'await-to-js'
 import { LoggerService } from '../logger/logger.service'

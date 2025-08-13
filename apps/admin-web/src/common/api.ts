@@ -1,5 +1,5 @@
 import type { AppRoute, AppRouter, ClientInferResponseBody } from '@ts-rest/core'
-import { authContract } from '@project-code/shared'
+import { authContract } from '@ts-rest-practice/shared'
 import { initClient, tsRestFetchApi } from '@ts-rest/core'
 import { initQueryClient } from '@ts-rest/vue-query'
 import { memoize } from 'lodash-es'

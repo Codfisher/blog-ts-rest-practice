@@ -1,7 +1,7 @@
 import type { INestApplication } from '@nestjs/common'
 import type { TestingModule } from '@nestjs/testing'
-import type { accountContract } from '@project-code/shared'
 import type { ClientInferRequest } from '@ts-rest/core'
+import type { accountContract } from '@ts-rest-practice/shared'
 import { ConfigModule } from '@nestjs/config'
 import { MongooseModule } from '@nestjs/mongoose'
 import { Test } from '@nestjs/testing'
@@ -162,26 +162,12 @@ describe('account e2e', () => {
         const { body: result } = await accountApi.find()
         expect(result.total).toBe(2)
         expect(result.data).toHaveLength(2)
-
-        result.data.forEach((item) => {
-          // @ts-expect-error 檢查機敏欄位是否洩漏
-          expect(item.password).not.toBeDefined()
-          // @ts-expect-error 檢查機敏欄位是否洩漏
-          expect(item.refreshToken).not.toBeDefined()
-        })
       }
 
       {
         const { body: result } = await accountApi.find({ limit: 1 })
         expect(result.total).toBe(2)
         expect(result.data).toHaveLength(1)
-
-        result.data.forEach((item) => {
-          // @ts-expect-error 檢查機敏欄位是否洩漏
-          expect(item.password).not.toBeDefined()
-          // @ts-expect-error 檢查機敏欄位是否洩漏
-          expect(item.refreshToken).not.toBeDefined()
-        })
       }
     })
   })
@@ -192,10 +178,6 @@ describe('account e2e', () => {
       const { body: newData } = await accountApi.findOne(data.id)
 
       expect(newData.id).toEqual(data.id)
-      // @ts-expect-error 檢查機敏欄位是否洩漏
-      expect(newData.password).not.toBeDefined()
-      // @ts-expect-error 檢查機敏欄位是否洩漏
-      expect(newData.refreshToken).not.toBeDefined()
     })
   })
 

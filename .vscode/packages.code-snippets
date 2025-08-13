@@ -19,16 +19,16 @@
     "scope": "javascript,typescript",
     "prefix": "import",
     "body": [
-      "import { $1 } from '@project-code/shared'"
+      "import { $1 } from '@ts-rest-practice/shared'"
     ],
-    "description": "import @project-code/shared"
+    "description": "import @ts-rest-practice/shared"
   },
   "import-common": {
     "scope": "javascript,typescript",
     "prefix": "import",
     "body": [
-      "import { $1 } from '@project-code/common'"
+      "import { $1 } from '@ts-rest-practice/common'"
     ],
-    "description": "import @project-code/common"
+    "description": "import @ts-rest-practice/common"
   },
 }

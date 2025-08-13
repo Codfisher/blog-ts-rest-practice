@@ -6,7 +6,7 @@ module.exports = {
   externals: [nodeExternals(
     {
       allowlist: [
-        /^@project-code/,
+        /^@ts-rest-practice/,
       ],
     }
   )], // in order to ignore all modules in node_modules folder

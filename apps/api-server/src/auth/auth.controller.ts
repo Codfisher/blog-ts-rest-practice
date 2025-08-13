@@ -6,7 +6,7 @@ import {
   UseGuards,
 } from '@nestjs/common'
 import { ConfigType } from '@nestjs/config'
-import { authContract } from '@project-code/shared'
+import { authContract } from '@ts-rest-practice/shared'
 import { TsRestHandler, tsRestHandler } from '@ts-rest/nest'
 import to from 'await-to-js'
 import { AccountService } from '../account/account.service'

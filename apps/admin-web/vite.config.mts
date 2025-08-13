@@ -24,7 +24,7 @@ export default defineConfig(({ command, mode }) => {
   return {
     base,
     optimizeDeps: {
-      exclude: ['type-fest', '@project-code/shared'],
+      exclude: ['type-fest', '@ts-rest-practice/shared'],
     },
     esbuild: {
       drop: isBuild ? ['console', 'debugger'] : [],

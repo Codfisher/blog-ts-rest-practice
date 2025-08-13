@@ -2,7 +2,7 @@ import type { ClientInferRequest } from '@ts-rest/core'
 import {
   authContract,
   userContract,
-} from '@project-code/shared'
+} from '@ts-rest-practice/shared'
 import { defineStore } from 'pinia'
 import { clone } from 'remeda'
 import { computed } from 'vue'

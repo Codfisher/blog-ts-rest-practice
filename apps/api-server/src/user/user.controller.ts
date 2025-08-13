@@ -2,7 +2,7 @@ import {
   Controller,
   UseGuards,
 } from '@nestjs/common'
-import { userContract } from '@project-code/shared'
+import { userContract } from '@ts-rest-practice/shared'
 
 import { TsRestHandler, tsRestHandler } from '@ts-rest/nest'
 import to from 'await-to-js'

@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
-import { accountContract } from '@project-code/shared'
+import { accountContract } from '@ts-rest-practice/shared'
 import { ServerInferRequest } from '@ts-rest/core'
 import to from 'await-to-js'
 import bcrypt from 'bcryptjs'

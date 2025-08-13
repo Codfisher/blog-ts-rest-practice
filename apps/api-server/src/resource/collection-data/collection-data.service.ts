@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
 import {
   collectionDataContract,
-} from '@project-code/shared'
+} from '@ts-rest-practice/shared'
 import { ServerInferRequest } from '@ts-rest/core'
 import flat from 'flat'
 import { defaultsDeep } from 'lodash'

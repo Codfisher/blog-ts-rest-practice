@@ -1,5 +1,5 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose'
-import { ACCOUNT_ROLE, AccountRole } from '@project-code/shared'
+import { ACCOUNT_ROLE, AccountRole } from '@ts-rest-practice/shared'
 import { HydratedDocument } from 'mongoose'
 
 @Schema({

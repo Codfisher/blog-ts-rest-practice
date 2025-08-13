@@ -1,4 +1,4 @@
-import type { PaginatedData } from '@project-code/shared'
+import type { PaginatedData } from '@ts-rest-practice/shared'
 
 export * from './utils-mongoose'
 

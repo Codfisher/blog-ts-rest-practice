@@ -1,6 +1,6 @@
 import type { INestApplication } from '@nestjs/common'
 import type { TestingModule } from '@nestjs/testing'
-import type { accountContract, userContract } from '@project-code/shared'
+import type { accountContract, userContract } from '@ts-rest-practice/shared'
 import type { ClientInferRequest } from '@ts-rest/core'
 import { ConfigModule } from '@nestjs/config'
 import { MongooseModule } from '@nestjs/mongoose'
